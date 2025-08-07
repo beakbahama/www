@@ -4,26 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+        /* Base GitHub Dark Mode Vibe */
+body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  margin: 0;
+  
+  /* Center the whole container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  -padding: 20px;
+}
 
-        .container {
-            padding: 20px;
-        }
-    </style>
-</head>
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Clean list styling */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 20px 0;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+/* Separator between items */
+li:not(:last-child)::after {
+  content: "";
+  display: block;
+  margin: 20px auto 0;
+  width: 60%;
+  height: 1px;
+  background-color: #30363d;
+}
+
+/* Link styling */
+a {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #1f6feb;
+  text-decoration: underline;
+}
+
+/* Fine print styling */
+.fine-print {
+  margin-top: auto;
+  font-size: 0.85rem;
+  color: #8b949e;
+  line-height: 1.4;
+  padding-top: 36px;
+  max-width: 480px;
+  text-align: center;
+  bottom: 0;
+}
+
+.fine-print a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.fine-print a:hover {
+  color: #1f6feb;
+  text-decoration: underline;
+}
+
+/* Responsive text */
+@media (max-width: 480px) {
+  li {
+    font-size: 1rem;
+  }
+}
+
+h2 {
+    margin-top: 4rem; /* roughly 48px, but scales with font size */
+    margin-bottom: 1rem; /* tighter gap below */
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #8b949e; /* subdued GitHub-style gray */
+}
+
+h2:first-of-type {
+    margin-top: 0;
+}
+</style></head>
+
 <body>
+    <div class="-container">
+        <h2>me</h2>
+        <ul>
+            <li><a href="https://github.com/beakbahama/log" target="_blank" rel="noopener noreferrer">
+                Log</a> - My thoughts and 💩</li>
+        </ul>
+        
+        <h2>projectz</h2>
+        <ul>
+            <li><a href="https://worldamazing.org/" target="_blank" rel="noopener noreferrer">
+                World Amazing</a> - A solution to humanity's problems</li>
+        </ul>
 
-<ul>
-      <li><a href="https://github.com/beakbahama/log" target="_blank">Public Log</a> - My thoughts and 💩</li>
-      <li><a href="https://www.tiktok.com/@beakbahama" target="_blank">TikTok</a> - Currently at 0 videos</li>
-      <li><a href="https://x.com/beakbahama" target="_blank">Xwitter</a> - Currently at 0 posts</li>
-      <li><a href="mailto: m@whomanatee.org" target="_blank">Email</a> - Memes preferred but not required</li>
-</ul>
-
+        <h2>connect</h2>
+        <ul>
+            <li><a href="mailto: m@worldamazing.org" target="_blank" rel="noopener noreferrer">
+                Email</a> - Memes preferred (but not required)</li>
+            <li><a href="https://github.com/beakbahama" target="_blank">
+                GitHub</a> - Follow me on GitHub</li>
+            <li><a href="https://x.com/beakbahama" target="_blank" rel="noopener noreferrer">
+                Xwitter</a> - Currently at 0 posts</li>
+            <li><a href="https://www.tiktok.com/@beakbahama" target="_blank" rel="noopener noreferrer">
+                TikTaks</a> - Currently at 0 videos</li>
+            <li><a href="https://www.youtube.com/@beakbahama" target="_blank" rel="noopener noreferrer">
+                YouTubes</a> - Currently at 0 videos</li>
+            <li><span href="" target="_blank">
+                RSS</span> - Coming soon! (maybe)</li>
+        </ul>
+        <div class="fine-print">
+            * If you're gonna click anything, visit the <a href="https://worldamazing.org/" target="_blank" rel="noopener noreferrer">World Amazing</a> site. In case of emergencies in the US dial 911, other locales <a href="https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers" target="_blank" rel="noopener noreferrer">see here</a>.
+        </div>
+    </div>
 </body></html>
